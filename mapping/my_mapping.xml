@@ -1,0 +1,16 @@
+<fakebus>
+    <Server ip="127.0.0.1" port="2000">
+    </Server>
+
+    <Mapping type="IEC61850">
+        <Register addr="Ox4000" type="holding">val1</Register>
+        <Register addr="Ox4001" type="input">
+            <Field mask="0x03">val2</Field>
+            <Field mask="0x0C">val3</Field>
+            <Field mask="0x30">val4</Field>
+            <Field mask="0xC0">val5</Field>
+        </Register>
+        <Bit addr="0x4002" type="coil">val6</Bit>
+        <Bit addr="0x4003" type="discrete">val7</Bit>
+    </Mapping>
+</fakebus>
